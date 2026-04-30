@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CalculatorMVVM.Models;
+using CalculatorMVVM.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,12 @@ namespace CalculatorMVVM
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new CalculatorViewModel(new Calculator());
         }
+
+        
     }
+
+    
 }
+
